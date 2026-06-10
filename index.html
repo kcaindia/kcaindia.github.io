@@ -175,17 +175,57 @@
   <div class="wrap" style="text-align:center">
     <span class="eyebrow" style="background:rgba(255,255,255,.12);color:var(--gold)">Testimonials</span>
     <h2 class="section-title">Loved and endorsed nationally</h2>
-    <div class="quote">
-      <p class="text">"I have known Kids' Cerebral Academy for one decade contributing selflessly towards the holistic development of the school-going children with full devotion &amp; dedication. Glad to learn about KCA holding the National Talent Search Drawing and Painting Scholarship Competition 2026, Rising Colours, for Nursery to 10th Standard students."</p>
-      <p class="who">Dr. Uday Bodhankar</p>
-      <p class="cred">MD, DCH, FICMCH, FIAP, FNNF, FRCPCH (UK) · Executive Director, Commonwealth Association for Health &amp; Disability · Director, Bodhankar Children's Hospital, Nagpur</p>
-    </div>
-    <div class="endorsers">
-      <span class="endorser">Endorsed by <b>Shri Nitin Gadkari</b> · Union Minister, Government of India</span>
-      <span class="endorser">Endorsed by <b>Raj Saini</b> · Senior Artist, National Awardee</span>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide-track" id="track">
+          <div class="slide">
+            <div class="quote">
+              <p class="text">"I have known Kids' Cerebral Academy for one decade contributing selflessly towards the holistic development of the school-going children with full devotion &amp; dedication. Glad to learn about KCA holding the National Talent Search Drawing and Painting Scholarship Competition 2026, Rising Colours, for Nursery to 10th Standard students."</p>
+              <p class="who">Honourable Dr. Uday Bodhankar</p>
+              <p class="cred">MD, DCH, FICMCH, FIAP, FNNF, FRCPCH (UK) · Executive Director, Commonwealth Association for Health &amp; Disability · Deputy Chairperson, CHPA (UK) · Director, Bodhankar Children's Hospital, Nagpur</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="quote">
+              <p class="text">"I am happy to know that Kids' Cerebral Academy, Nagpur has planned to hold Rising Colours, a National Talent Search Drawing and Painting Scholarship Competition 2026. I extend my best wishes to the contest and laud the efforts of the organizers."</p>
+              <p class="who">Honourable Shri Nitin Gadkari</p>
+              <p class="cred">Minister, Road Transport and Highways · Government of India</p>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="quote">
+              <p class="text">"A remarkable platform, Kids' Cerebral Academy, is a brainchild of Dr. Gurupreet Kaur who found a fascinating approach to highlight the kids' hidden talents and abilities. The entire platform is meticulously chosen with a focus on originality to not only accommodate but also encourage the development of children through artistic means. I encourage schools, parents, and students from kindergarten through class ten, aged 3 to 15, from all around the nation to attend and take part in this national talent hunt drawing and painting scholarship competition."</p>
+              <p class="who">Honourable Raj Saini</p>
+              <p class="cred">Senior Artist · National Awardee</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-nav">
+        <button class="slider-btn" onclick="moveSlide(-1)" aria-label="Previous testimonial">‹</button>
+        <div class="dots" id="dots">
+          <button class="dot active" onclick="goSlide(0)" aria-label="Testimonial 1"></button>
+          <button class="dot" onclick="goSlide(1)" aria-label="Testimonial 2"></button>
+          <button class="dot" onclick="goSlide(2)" aria-label="Testimonial 3"></button>
+        </div>
+        <button class="slider-btn" onclick="moveSlide(1)" aria-label="Next testimonial">›</button>
+      </div>
     </div>
   </div>
 </section>
+
+<script>
+let current = 0;
+const total = 3;
+function render() {
+  document.getElementById('track').style.transform = 'translateX(-' + (current * 100) + '%)';
+  document.querySelectorAll('#dots .dot').forEach((d, i) => d.classList.toggle('active', i === current));
+}
+function goSlide(i) { current = i; render(); resetTimer(); }
+function moveSlide(dir) { current = (current + dir + total) % total; render(); resetTimer(); }
+let timer = setInterval(() => moveSlide(1), 6000);
+function resetTimer() { clearInterval(timer); timer = setInterval(() => moveSlide(1), 6000); }
+</script>
 
 <section class="contact" id="contact">
   <div class="wrap">

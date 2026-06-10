@@ -124,9 +124,9 @@ nav a:hover{color:var(--purple)}
 /* testimonial slider */
 .slider{max-width:880px;margin:30px auto 0;position:relative}
 .slides{overflow:hidden;border-radius:var(--radius)}
-.slide-track{display:flex;transition:transform .5s ease}
+.slide-track{display:flex;align-items:flex-start;transition:transform .5s ease}
 .slide{min-width:100%;box-sizing:border-box}
-.slide .quote{margin:0;height:100%}
+.slide .quote{margin:0}
 .slider-nav{display:flex;justify-content:center;align-items:center;gap:18px;margin-top:24px}
 .slider-btn{width:44px;height:44px;border-radius:50%;border:2px solid rgba(255,255,255,.4);background:rgba(255,255,255,.08);color:#fff;font-size:1.2rem;cursor:pointer;transition:background .15s}
 .slider-btn:hover{background:var(--gold);color:var(--purple-deep);border-color:var(--gold)}
@@ -192,6 +192,12 @@ footer a:hover{color:var(--gold)}
   .hero .wrap,.split,.contact-grid{grid-template-columns:1fr}
   .stats .wrap{grid-template-columns:repeat(2,1fr)}
   .footer-grid{grid-template-columns:1fr}
+  .topbar .wrap span:last-child{display:none}
+  .topbar .wrap{justify-content:center}
+  .hero{padding:60px 0 80px}
+  .quote{padding:28px 20px}
+  .quote p.text{font-size:1.05rem}
+  .page-hero{padding:48px 0}
   nav ul{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:10px 24px 20px;box-shadow:0 14px 24px rgba(74,18,89,.12)}
   nav ul.open{display:flex}
   nav li{width:100%;padding:10px 0}

@@ -30,10 +30,9 @@
     </a>
     <nav>
       <button class="menu-btn" onclick="document.querySelector('nav ul').classList.toggle('open')">☰</button>
-      <ul>
+      <ul onclick="if(event.target.tagName==='A')this.classList.remove('open')">
         <li><a href="index.html">Home</a></li>
         <li><a href="national.html">Competition</a></li>
-        <li><a href="global.html">Art Exhibition</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="previous-events.html">Previous Events</a></li>
         <li><a href="faq.html">FAQs</a></li>

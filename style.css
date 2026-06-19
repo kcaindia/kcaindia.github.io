@@ -86,6 +86,9 @@ nav a:hover{color:var(--purple)}
 .card p{color:var(--ink-soft);font-size:.97rem}
 .card.featured{background:var(--purple-deep)}
 .card.featured h3,.card.featured p{color:#fff}
+.card.featured .about-points li{color:#fff}
+.card.featured .about-points li::before{color:var(--gold)}
+.card.featured .eyebrow{background:rgba(255,255,255,.15);color:#fff}
 .card.featured .icon{background:rgba(255,255,255,.15)}
 .card.featured .ribbon{position:absolute;top:18px;right:18px;background:var(--gold);color:var(--purple-deep);font-weight:800;font-size:.72rem;padding:4px 10px;border-radius:999px;letter-spacing:.06em}
 

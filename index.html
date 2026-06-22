@@ -220,9 +220,7 @@
       </div>
     </div>
     <p style="margin-top:32px">
-      <a class="btn btn-purple" href="https://t.me/KCAcontests" target="_blank" rel="noopener">View Winners Gallery on Telegram</a>
-      &nbsp;
-      <a class="btn btn-outline" href="previous-events.html">Previous Events</a>
+      <a class="btn btn-purple" href="previous-events.html">View Past Winners &amp; Posters</a>
     </p>
   </div>
 </section>
@@ -370,9 +368,9 @@ function resetTimer() { clearInterval(timer); timer = setInterval(() => moveSlid
         <div class="info-row"><span class="icon">📍</span><div><b>Visit us</b><span>44 Farmland, Ramdaspeth, Nagpur 440010</span></div></div>
         <div class="info-row"><span class="icon">📞</span><div><b>Call or WhatsApp</b><a href="tel:+917770016545">77700 16545</a><br><a href="tel:+917796613273">77966 13273</a></div></div>
         <div class="info-row"><span class="icon">✉️</span><div><b>Email</b><a href="mailto:kcaindia.com@gmail.com">kcaindia.com@gmail.com</a><br><a href="mailto:kcarisingcolours@gmail.com">kcarisingcolours@gmail.com</a></div></div>
-        <div class="info-row"><span class="icon">🖼️</span><div><b>Event gallery</b><a href="https://t.me/KCAcontests" target="_blank" rel="noopener">t.me/KCAcontests</a></div></div>
+        <div class="info-row"><span class="icon">🖼️</span><div><b>Event gallery</b><a href="previous-events.html">Previous events &amp; winners</a></div></div>
       </div>
-      <form action="mailto:kcarisingcolours@gmail.com" method="get">
+      <form onsubmit="return sendContact(event)">
         <div class="field"><label for="name">Your Name</label><input id="name" type="text" placeholder="Full name" required></div>
         <div class="field"><label for="email">Your Email</label><input id="email" type="email" placeholder="you@example.com" required></div>
         <div class="field"><label for="subject">Subject</label><input id="subject" type="text" placeholder="School registration, competition, etc."></div>
@@ -419,6 +417,19 @@ function resetTimer() { clearInterval(timer); timer = setInterval(() => moveSlid
 </footer>
 
 <a class="wa-float" href="https://wa.me/917770016545" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+
+<script>
+function sendContact(e){
+  e.preventDefault();
+  var name = document.getElementById('name').value.trim();
+  var email = document.getElementById('email').value.trim();
+  var subject = document.getElementById('subject').value.trim() || 'Website enquiry';
+  var message = document.getElementById('message').value.trim();
+  var body = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message;
+  window.location.href = 'mailto:kcarisingcolours@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  return false;
+}
+</script>
 
 </body>
 </html>

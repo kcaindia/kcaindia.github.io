@@ -13,8 +13,8 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Nunito',sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-h1,h2,h3,h4{font-family:'Baloo 2',cursive;line-height:1.15;color:var(--purple-deep)}
+body{font-family:'Nunito',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';color:var(--ink);background:var(--bg);line-height:1.6}
+h1,h2,h3,h4{font-family:'Baloo 2',cursive,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';line-height:1.15;color:var(--purple-deep)}
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
 .wrap{max-width:1140px;margin:0 auto;padding:0 24px}

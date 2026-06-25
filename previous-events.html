@@ -116,5 +116,26 @@
 
 <a class="wa-float" href="https://wa.me/917770016545" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
 
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="KCA competition poster">
+  <div class="lightbox-hint">Tap anywhere or press Esc to close</div>
+</div>
+
+<script>
+(function(){
+  var lb = document.getElementById('lightbox');
+  var img = document.getElementById('lightboxImg');
+  function open(src){ img.src = src; lb.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function close(){ lb.classList.remove('open'); document.body.style.overflow = ''; img.src = ''; }
+  document.querySelectorAll('.event-card').forEach(function(card){
+    card.addEventListener('click', function(e){ e.preventDefault(); open(card.getAttribute('href')); });
+  });
+  lb.addEventListener('click', function(e){ if(e.target !== img) close(); });
+  document.getElementById('lightboxClose').addEventListener('click', close);
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+})();
+</script>
+
 </body>
 </html>

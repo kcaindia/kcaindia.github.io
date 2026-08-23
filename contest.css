@@ -53,7 +53,8 @@
 
 /* ---------- stat strip ---------- */
 .gc-stats{background:#fff;border-bottom:1px solid var(--gc-line)}
-.gc-stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding-top:34px;padding-bottom:34px}
+.gc-stats .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-top:34px;padding-bottom:34px}
+.rc .gc-stats .wrap{grid-template-columns:repeat(4,1fr)}
 .gc-stat{text-align:center}
 .gc-stat b{display:block;font-family:'Playfair Display',Georgia,serif;font-size:2.1rem;color:var(--gc-pur);line-height:1}
 .gc-stat span{display:block;font-size:.88rem;font-weight:700;color:var(--ink-soft);margin-top:6px}
@@ -225,7 +226,7 @@ table.gc-cat .fee{text-align:right;font-weight:900;color:var(--gc-pur);font-size
 
 @media (max-width:980px){
   .gc-hero .wrap{grid-template-columns:1fr}
-  .gc-stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .gc-stats .wrap,.rc .gc-stats .wrap{grid-template-columns:repeat(2,1fr)}
   .gc-steps,.gc-levels,.gc-rules,.gc-award-wide{grid-template-columns:1fr}
   .gc-tl .row{grid-template-columns:1fr;gap:8px}
   .fb-book{display:none}

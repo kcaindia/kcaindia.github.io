@@ -221,3 +221,6 @@ footer a:hover{color:var(--gold)}
   .menu-btn{display:block}
   section{padding:60px 0}
 }
+/* clickable contest teaser card on the homepage */
+a.card.gc-teaser{display:block;transition:transform .15s ease,box-shadow .15s ease}
+a.card.gc-teaser:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(74,18,89,.16)}

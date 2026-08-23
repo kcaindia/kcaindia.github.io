@@ -45,9 +45,13 @@
     <nav>
       <button class="menu-btn" onclick="document.querySelector('nav ul').classList.toggle('open')">☰</button>
       <ul onclick="if(event.target.tagName==='A')this.classList.remove('open')">
-        <li><a href="#competition">Competition</a></li>
-        <li><a href="rising-colours.html">Rising Colours</a></li>
-        <li><a href="grand-indian-art-contest.html">Grand Contest</a></li>
+        <li class="has-drop">
+          <a href="#competition" class="drop-toggle">Competition <span class="caret">▾</span></a>
+          <ul class="drop">
+            <li><a href="rising-colours.html">Rising Colours 2026<small>School competition · Nursery to Class 10</small></a></li>
+            <li><a href="grand-indian-art-contest.html">The Grand Indian Art Contest 2026<small>Open to all India · Registrations open</small></a></li>
+          </ul>
+        </li>
         <li><a href="#about">About Us</a></li>
         <li><a href="https://t.me/KCAcontests" target="_blank" rel="noopener">KCA's Gallery</a></li>
         <li><a href="previous-events.html">Previous Events</a></li>

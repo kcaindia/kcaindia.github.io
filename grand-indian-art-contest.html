@@ -266,7 +266,7 @@
     <div class="fb" id="fb">
       <div class="fb-stage">
         <div class="fb-book" id="fbBook"><span class="plate">Click the cover to start reading</span><span class="gutter"></span></div>
-        <div class="fb-single" id="fbSingle"><img id="fbSingleImg" src="images/brochure/page-01.jpg" alt="Brochure page 1"></div>
+        <div class="fb-single" id="fbSingle"><img id="fbSingleImg" src="images/brochure/page-01.jpg?v=2" alt="Brochure page 1"></div>
       </div>
 
       <div class="fb-bar">
@@ -404,7 +404,7 @@
 <script>
 (function(){
   var TOTAL = 13;
-  var src = function(n){ return 'images/brochure/page-' + (n<10 ? '0'+n : n) + '.jpg'; };
+  var src = function(n){ return 'images/brochure/page-' + (n<10 ? '0'+n : n) + '.jpg?v=2'; };
   var book = document.getElementById('fbBook');
   if(!book) return;
   var leaves = [], LEAVES = Math.ceil(TOTAL/2);

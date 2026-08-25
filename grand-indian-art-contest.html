@@ -127,13 +127,13 @@
       <table class="gc-cat">
         <thead><tr><th>Category</th><th>Eligibility</th><th>Topic</th><th>Sheet or canvas size</th><th style="text-align:right">Fee</th></tr></thead>
         <tbody>
-          <tr><td><span class="c"><span class="bdg">A</span><span class="nm">Tiny Artists</span></span></td><td>Nursery, KG 1 and KG 2</td><td class="topic">My Favourite Toy</td><td>11 × 15 inch</td><td class="fee">₹199</td></tr>
-          <tr><td><span class="c"><span class="bdg">B</span><span class="nm">Budding Artists</span></span></td><td>Class 1 and 2</td><td class="topic">My Dream Garden</td><td>11 × 15 inch</td><td class="fee">₹199</td></tr>
-          <tr><td><span class="c"><span class="bdg">C</span><span class="nm">Young Artists</span></span></td><td>Class 3 and 4</td><td class="topic">Nature Around Us</td><td>11 × 15 inch</td><td class="fee">₹199</td></tr>
-          <tr><td><span class="c"><span class="bdg">D</span><span class="nm">School Juniors</span></span></td><td>Class 5 and 6</td><td class="topic">Save Our Planet</td><td>11 × 15 inch</td><td class="fee">₹199</td></tr>
-          <tr><td><span class="c"><span class="bdg">E</span><span class="nm">School Intermediates</span></span></td><td>Class 7 and 8</td><td class="topic">Unity in Diversity</td><td>11 × 15 inch</td><td class="fee">₹199</td></tr>
-          <tr><td><span class="c"><span class="bdg">F</span><span class="nm">School Seniors</span></span></td><td>Class 9 and 10</td><td class="topic">Vision of a Developed Nation</td><td>11 × 15 inch</td><td class="fee">₹199</td></tr>
-          <tr class="t2"><td><span class="c"><span class="bdg">G</span><span class="nm">Higher Secondary</span></span></td><td>Class 11 and 12</td><td class="topic">Youth Power for Change</td><td>11 × 15 inch</td><td class="fee">₹299</td></tr>
+          <tr><td><span class="c"><span class="bdg">A</span><span class="nm">Tiny Artists</span></span></td><td>Nursery, KG 1 and KG 2</td><td class="topic">My Favourite Toy</td><td>A3</td><td class="fee">₹199</td></tr>
+          <tr><td><span class="c"><span class="bdg">B</span><span class="nm">Budding Artists</span></span></td><td>Class 1 and 2</td><td class="topic">My Dream Garden</td><td>A3</td><td class="fee">₹199</td></tr>
+          <tr><td><span class="c"><span class="bdg">C</span><span class="nm">Young Artists</span></span></td><td>Class 3 and 4</td><td class="topic">Nature Around Us</td><td>A3</td><td class="fee">₹199</td></tr>
+          <tr><td><span class="c"><span class="bdg">D</span><span class="nm">School Juniors</span></span></td><td>Class 5 and 6</td><td class="topic">Save Our Planet</td><td>A3</td><td class="fee">₹199</td></tr>
+          <tr><td><span class="c"><span class="bdg">E</span><span class="nm">School Intermediates</span></span></td><td>Class 7 and 8</td><td class="topic">Unity in Diversity</td><td>A3</td><td class="fee">₹199</td></tr>
+          <tr><td><span class="c"><span class="bdg">F</span><span class="nm">School Seniors</span></span></td><td>Class 9 and 10</td><td class="topic">Vision of a Developed Nation</td><td>A3</td><td class="fee">₹199</td></tr>
+          <tr class="t2"><td><span class="c"><span class="bdg">G</span><span class="nm">Higher Secondary</span></span></td><td>Class 11 and 12</td><td class="topic">Youth Power for Change</td><td>A3</td><td class="fee">₹299</td></tr>
           <tr class="t2"><td><span class="c"><span class="bdg">H</span><span class="nm">Hobby Artists</span></span></td><td>Open to all</td><td class="topic">Colours of Life</td><td>Canvas 18 × 18 inch</td><td class="fee">₹399</td></tr>
           <tr class="t3"><td><span class="c"><span class="bdg">I</span><span class="nm">Fine Arts College or Institute</span></span></td><td>Degree or Diploma</td><td class="topic">Cultural Heritage</td><td>Canvas 18 × 18 inch</td><td class="fee">₹499</td></tr>
           <tr class="t3"><td><span class="c"><span class="bdg">J</span><span class="nm">Professional Artists</span></span></td><td>Open to all</td><td class="topic">Open theme, artist's choice</td><td>Canvas 18 × 18 inch</td><td class="fee">₹599</td></tr>
@@ -266,7 +266,7 @@
     <div class="fb" id="fb">
       <div class="fb-stage">
         <div class="fb-book" id="fbBook"><span class="plate">Click the cover to start reading</span><span class="gutter"></span></div>
-        <div class="fb-single" id="fbSingle"><img id="fbSingleImg" src="images/brochure/page-01.jpg?v=2" alt="Brochure page 1"></div>
+        <div class="fb-single" id="fbSingle"><img id="fbSingleImg" src="images/brochure/page-01.jpg?v=3" alt="Brochure page 1"></div>
       </div>
 
       <div class="fb-bar">
@@ -404,7 +404,7 @@
 <script>
 (function(){
   var TOTAL = 13;
-  var src = function(n){ return 'images/brochure/page-' + (n<10 ? '0'+n : n) + '.jpg?v=2'; };
+  var src = function(n){ return 'images/brochure/page-' + (n<10 ? '0'+n : n) + '.jpg?v=3'; };
   var book = document.getElementById('fbBook');
   if(!book) return;
   var leaves = [], LEAVES = Math.ceil(TOTAL/2);

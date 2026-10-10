@@ -271,3 +271,52 @@ table.gc-cat .fee{text-align:right;font-weight:900;color:var(--gc-pur);font-size
 .rc-cat b{display:block;font-size:1rem;color:var(--gc-deep)}
 .rc-steps{grid-template-columns:1fr 1fr}
 @media (max-width:980px){.rc-steps{grid-template-columns:1fr}}
+
+/* ================================================================
+   KCA International Art Club, palette taken from the club brochure
+   purple to magenta hero, orange membership, teal benefits
+   ================================================================ */
+.kiac{--k-pur:#7B2D8E;--k-deep:#4A1259;--k-mag:#C2185B;--k-orange:#F5801F;--k-teal:#12A89D;--k-blue:#2277C8;--k-gold:#F2B705}
+.kiac .gc-hero{background:linear-gradient(150deg,#4A1259 0%,#7B2D8E 45%,#C2185B 100%)}
+.kiac .gc-hero::before{background:radial-gradient(circle at 40% 40%,rgba(242,183,5,.30),rgba(242,183,5,0) 68%)}
+.kiac .gc-hero::after{background:radial-gradient(circle at 50% 50%,rgba(18,168,157,.30),rgba(18,168,157,0) 70%)}
+.kiac .gc-hero h1 em{color:var(--k-gold)}
+.kiac .gc-yr .rule{background:linear-gradient(90deg,var(--k-orange),var(--k-gold),var(--k-teal),var(--k-blue))}
+.kiac .gc-cta{background:linear-gradient(140deg,#4A1259,#7B2D8E 55%,#C2185B)}
+.kiac .gc-cta::before{background:radial-gradient(circle at 50% 50%,rgba(18,168,157,.26),rgba(18,168,157,0) 70%)}
+
+/* membership price cards */
+.k-prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:38px}
+.k-price{background:linear-gradient(150deg,var(--k-orange) 0%,#E8455F 100%);color:#fff;border-radius:18px;padding:28px 26px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 14px 32px -16px rgba(0,0,0,.45)}
+.k-price .who{font-size:1.05rem;font-weight:800}
+.k-price .amt{font-family:'Playfair Display',Georgia,serif;font-size:1.5rem;font-weight:800;white-space:nowrap}
+
+/* benefit cards */
+.k-benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;margin-top:38px}
+.k-benefit{background:#fff;border:1px solid var(--gc-line);border-left:5px solid var(--k-teal);border-radius:14px;
+  padding:18px 22px;display:flex;gap:14px;align-items:flex-start;font-size:.97rem;color:var(--ink-soft);font-weight:600}
+.k-benefit b{color:var(--gc-deep);font-weight:800}
+.k-benefit:nth-child(2n){border-left-color:var(--k-blue)}
+.k-benefit:nth-child(3n){border-left-color:var(--k-mag)}
+.k-benefit:nth-child(4n){border-left-color:var(--k-orange)}
+
+/* category chips */
+.k-cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-top:34px}
+.k-cat{background:#fff;border:1px solid var(--gc-line);border-radius:14px;padding:20px 16px;text-align:center}
+.k-cat .l{display:flex;align-items:center;justify-content:center;width:40px;height:40px;margin:0 auto 10px;border-radius:50%;
+  font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:1.15rem;color:#fff;background:var(--k-pur)}
+.k-cat:nth-child(1) .l{background:var(--k-orange)}
+.k-cat:nth-child(2) .l{background:#E8455F}
+.k-cat:nth-child(3) .l{background:var(--k-mag)}
+.k-cat:nth-child(4) .l{background:var(--k-pur)}
+.k-cat:nth-child(5) .l{background:var(--k-blue)}
+.k-cat:nth-child(6) .l{background:var(--k-teal)}
+.k-cat:nth-child(7) .l{background:#1B7F3B}
+.k-cat b{display:block;font-size:.97rem;color:var(--gc-deep)}
+
+/* deadline strip */
+.k-deadline{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;background:linear-gradient(112deg,var(--k-teal),var(--k-blue));
+  color:#fff;border-radius:18px;padding:26px 30px;margin-top:34px;text-align:center}
+.k-deadline b{font-family:'Playfair Display',Georgia,serif;font-size:1.6rem}
+.k-deadline span{font-size:1rem;font-weight:700;opacity:.94}

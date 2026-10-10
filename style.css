@@ -340,9 +340,15 @@ nav ul.drop a:hover small{color:var(--purple)}
   .tw-quick{padding:20px}
 }
 /* grid children must be allowed to shrink or long titles push the page wide */
-.tw-quick .q-title{min-width:0;overflow-wrap:anywhere}
+.tw-quick .q-title{min-width:0;overflow-wrap:break-word}
 .tw-card h2,.tw-desc,.tw-theme{overflow-wrap:anywhere}
 @media (max-width:560px){
   .tw-quick{grid-template-columns:1fr;grid-template-areas:"pill" "title" "more";gap:12px}
   .tw-quick .q-pill{white-space:normal}
 }
+/* third option on the home opener: KCA International Art Club
+   the two contests keep the original side by side pair, the club spans below */
+.tw-quick.club{grid-column:1 / -1;background:linear-gradient(150deg,#7B2D8E 0%,#C2185B 100%);color:#fff}
+.tw-quick.club .q-pill{background:rgba(255,255,255,.18);color:#fff}
+.tw-card.club{grid-column:1 / -1;background:linear-gradient(130deg,#4A1259 0%,#7B2D8E 48%,#C2185B 100%)}
+.tw-card.club .tw-theme{color:#F5C445}

@@ -313,7 +313,7 @@ for t in ('div','section','a','ul','li','span','p','h1','h2'):
    "Author identity unknown", restore it from history:
    `git config user.name "$(git log -1 --format='%an')"` and the same for `user.email`.
 9. **Browsers keep style.css for 10 minutes** (GitHub sends max-age=600). If you add new CSS classes and the HTML that uses them, returning visitors see the new HTML unstyled until the cache expires. index.html and register.html link `style.css?v=20261110`; bump that value whenever you add CSS a page depends on.
-10. **Homepage hero slide** (`.ks-hero`, added 10 Nov 2026) uses `images/hero/kca-hero-posters.jpg`, a mosaic of the event posters built with headless Chrome. One slide only, no arrows, on purpose.
+10. **Homepage hero** (`.kh` in style.css, 10 Nov 2026): "Discover the Artist in Every Child." in Shrikhand with rainbow letters, colour rings around the KCA logo, Kalam handwritten notes. It replaced a short lived poster mosaic slide on Yash's request. Everything below it is the original homepage. CSS cache tag is now `style.css?v=20261110b`.
 
 ---
 

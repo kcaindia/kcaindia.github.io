@@ -314,6 +314,7 @@ for t in ('div','section','a','ul','li','span','p','h1','h2'):
    `git config user.name "$(git log -1 --format='%an')"` and the same for `user.email`.
 9. **Browsers keep style.css for 10 minutes** (GitHub sends max-age=600). If you add new CSS classes and the HTML that uses them, returning visitors see the new HTML unstyled until the cache expires. index.html and register.html link `style.css?v=20261110`; bump that value whenever you add CSS a page depends on.
 10. **Homepage hero slide** (`.ks-hero`, 10 Nov 2026): poster mosaic background `images/hero/kca-hero-posters.jpg`, top line **DISCOVER THE ARTIST WITHIN YOU** (Yash's wording), gold strip button EXPLORE OUR COMPETITIONS, line NATIONAL ART COMPETITIONS SINCE 2008, stats row below. One slide, no arrows. Yash wants THIS banner; a colour rings hero was tried and rejected. CSS cache tag `style.css?v=20261110c`.
+11. **Keep it fast (10 Nov 2026 speed pass).** Never put a full size image where a small one shows. Nav and favicon use `images/kca-logo-192.png` (the 4501px `kca-logo.png` is 303 KB, keep it only for og:image). Homepage cards use `images/covers/*.jpg` (480px wide). Poster grids use `images/events/thumbs/*.jpg`, the full `.jpeg` stays as the link for the lightbox. Awards page gallery uses `images/awards-brochure/thumbs/`. When you replace an image but keep its name, add or bump a `?v=` on every reference, browsers cache for 10 minutes. Result: homepage 1.2 MB to 615 KB, largest paint 7 s to 0.6 s.
 
 ---
 

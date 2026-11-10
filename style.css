@@ -397,5 +397,5 @@ nav ul.drop a:hover small{color:var(--purple)}
 .oc-title{font-family:'Baloo 2',cursive;font-weight:700;font-size:1.18rem;line-height:1.2;color:var(--purple-deep)}
 .oc-text{color:var(--ink-soft);font-size:.92rem;line-height:1.5}
 .oc-go{margin-top:auto;padding-top:6px;font-family:'Baloo 2',cursive;font-weight:700;color:var(--purple)}
-@media (max-width:1020px){.oc-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:520px){.oc{padding:48px 0 56px}.oc-grid{grid-template-columns:1fr;gap:18px}.oc-img{aspect-ratio:16/11}}
+@media (max-width:1020px){.oc-grid{gap:14px}.oc-body{padding:14px 14px 16px}.oc-title{font-size:1.02rem}.oc-text{font-size:.84rem}}
+@media (max-width:700px){.oc{padding:44px 0 52px}.oc-grid{grid-template-columns:repeat(2,1fr);gap:12px}.oc-chip{font-size:.66rem;padding:4px 9px}.oc-text{display:none}}

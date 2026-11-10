@@ -352,3 +352,10 @@ nav ul.drop a:hover small{color:var(--purple)}
 .tw-quick.club .q-pill{background:rgba(255,255,255,.18);color:#fff}
 .tw-card.club{grid-column:1 / -1;background:linear-gradient(130deg,#4A1259 0%,#7B2D8E 48%,#C2185B 100%)}
 .tw-card.club .tw-theme{color:#F5C445}
+
+/* National Art Excellence Awards 2027, colours from its brochure */
+.tw-quick.club{grid-column:auto}
+.tw-quick.awards{background:linear-gradient(150deg,#3E9E96 0%,#8E2C8E 100%);color:#fff}
+.tw-quick.awards .q-pill{background:rgba(255,255,255,.18);color:#fff}
+.tw-card.awards{grid-column:1 / -1;background:linear-gradient(130deg,#2F7F78 0%,#3E9E96 35%,#8E2C8E 100%)}
+.tw-card.awards .tw-theme{color:#F5C445}

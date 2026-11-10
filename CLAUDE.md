@@ -124,7 +124,7 @@ server config.
 
 ---
 
-## 6. The three programmes
+## 6. The programmes
 
 ### The Grand Indian Art Contest 2026, individual entry
 - Page: `/grand-indian-art-contest.html`, short link `/contest`
@@ -156,6 +156,15 @@ server config.
 - **Submission deadline is the 30th of every month.** It was the 20th until 13 Oct 2026.
 - Brochure PDF at `brochure/KCA-International-Art-Club-Brochure.pdf`, linked from every
   Read the Brochure button.
+
+### KCA National Art Excellence Awards Ceremony 2027, Kala Ratna Samman (added 10 Nov 2026)
+- Page: `/national-art-excellence-awards.html`, short link `/awards`
+- Source: mumma's 4 page brochure, `brochure/KCA-National-Art-Excellence-Awards-2027-Brochure.pdf`, page JPGs at `images/awards-brochure/page-01.jpg` to `page-04.jpg`
+- Ceremony 14 March 2027, Sunday, 11 AM to 2.30 PM, 5 star hotel in Nagpur (to be informed). Exhibition 11 AM to 8 PM.
+- 9 categories (Class 1 and 2 up to Professional Artists), 25 awardees each, 225 total, one time fee Rs 2500 non refundable.
+- WhatsApp community: https://chat.whatsapp.com/BQgHsGOWsWu6Rku9VicChp (printed in the brochure)
+- **NO REGISTRATION FORM YET.** Yash will send a Google Form. Until then every button reads *Registration opens soon* (awards page hero and closing, homepage card, register.html card). When the form arrives, swap those locked spans for links.
+- Homepage headline changed from "Three Ways to Join" to "Four Ways to Join" when this was added.
 
 ### Shared contacts and socials
 ```

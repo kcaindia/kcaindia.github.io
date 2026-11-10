@@ -163,7 +163,7 @@ server config.
 - Ceremony 14 March 2027, Sunday, 11 AM to 2.30 PM, 5 star hotel in Nagpur (to be informed). Exhibition 11 AM to 8 PM.
 - 9 categories (Class 1 and 2 up to Professional Artists), 25 awardees each, 225 total, one time fee Rs 2500 non refundable.
 - WhatsApp community: https://chat.whatsapp.com/BQgHsGOWsWu6Rku9VicChp (printed in the brochure)
-- **NO REGISTRATION FORM YET.** Yash will send a Google Form. Until then every button reads *Registration opens soon* (awards page hero and closing, homepage card, register.html card). When the form arrives, swap those locked spans for links.
+- **Registration OPEN since 10 Nov 2026.** Form: `https://forms.gle/fS6RMirhw3286yD46` (needs Google sign in because it has file uploads). Linked from the awards page hero, step 1 and closing, the register.html card; homepage card chip says Registration open.
 - Homepage headline changed from "Three Ways to Join" to "Four Ways to Join" when this was added.
 
 ### Shared contacts and socials

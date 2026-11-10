@@ -394,6 +394,7 @@ nav ul.drop a:hover small{color:var(--purple)}
 .oc-body{display:flex;flex-direction:column;gap:8px;padding:18px 18px 20px;flex:1}
 .oc-chip{align-self:flex-start;font-size:.72rem;font-weight:800;letter-spacing:.04em;color:var(--purple);background:var(--purple-soft);padding:5px 11px;border-radius:999px}
 .oc-chip.new{background:#FFF3C4;color:#7A5300}
+.oc-chip.open{background:#E3F6E8;color:#11702C}
 .oc-title{font-family:'Baloo 2',cursive;font-weight:700;font-size:1.18rem;line-height:1.2;color:var(--purple-deep)}
 .oc-text{color:var(--ink-soft);font-size:.92rem;line-height:1.5}
 .oc-go{margin-top:auto;padding-top:6px;font-family:'Baloo 2',cursive;font-weight:700;color:var(--purple)}

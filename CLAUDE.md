@@ -116,7 +116,7 @@ printed URLs and short share links keep working. Never delete them.
 | `contest.html` → `/contest` | grand-indian-art-contest.html |
 | `club.html` → `/club` | kca-international-art-club.html |
 | `rising.html` → `/rising` | rising-colours.html |
-| `register.html` → `/register` | the Grand contest Google Form |
+| `register.html` → `/register` | NOT a stub since 10 Nov 2026: the Register chooser page (all three programmes, each with its own button or a closed notice). Every nav Register Now and footer Register Now points here |
 | `national.html` `about.html` `about-us.html` `gallery.html` `global.html` `previous_events.html` `privacy_policy.html` `terms_and_condition.html` `refund_and_cancellation.html` `user_deletion.html` | old site URLs from before the 2026 rebuild |
 
 GitHub Pages serves `/contest` from `contest.html`, so the short links work without any
@@ -134,6 +134,7 @@ server config.
 - Fees ₹199 to ₹599. Grand winner prizes ₹4,000 / ₹6,000 / ₹11,000 / ₹21,000.
 - Dates: register by 30 Oct 2026, artwork upload by 15 Nov 2026, shortlist 15 Dec 2026,
   originals by 30 Dec 2026, results 15 Jan 2027, awards and certificates before 30 Jan 2027.
+- **Registration CLOSED since 10 Nov 2026** (Yash's instruction): every button reads *Registration opens June 2027*, the form link appears nowhere. Artwork upload and later dates still stand for people already registered.
 - Has a hand built **flipbook** of the 13 page brochure, see section 8.
 
 ### Rising Colours 2026, school entry, 16th edition
@@ -148,7 +149,7 @@ server config.
 
 ### KCA International Art Club, global membership
 - Page: `/kca-international-art-club.html`, short link `/club`
-- Membership form: `https://forms.gle/8Bmg7mxJtpuujmbo7`
+- Membership form: `https://forms.gle/8Bmg7mxJtpuujmbo7`, **registration CLOSED since 10 Nov 2026**, every button reads *Membership Registration opens June 2027*, form link appears nowhere
 - Email: kcainternationalartclub@gmail.com
 - Membership ₹499 India, AED 25 UAE, US$8 other countries, per year.
 - 7 categories A to G. Monthly theme of the member's own choice.
@@ -309,14 +310,14 @@ for t in ('div','section','a','ul','li','span','p','h1','h2'):
 
 | When | What |
 |---|---|
-| **Now, overdue** | The Grand contest says **Registrations Open** but the last date to register was **30 Oct 2026**, which has passed. Ask Yash whether to close it, extend it, or leave it. |
+| Done 10 Nov 2026 | Grand contest and Art Club registration closed until June 2027, Register chooser page added |
 | 15 Nov 2026 | Artwork upload closes for the Grand contest |
 | 15 Dec 2026 | Shortlist announced, all 10 categories |
 | 30 Dec 2026 | Original artworks due from shortlisted participants |
 | 15 Jan 2027 | Final results |
 | 18 Jan 2027 | HTTPS cert renews, automatic, no action unless it fails |
 | 30 Jan 2027 | Awards and digital certificates sent |
-| June 2027 | Rising Colours school registration reopens, 17th edition |
+| June 2027 | All three registrations reopen: Rising Colours 17th edition, Grand contest, Art Club. Swap the locked buttons on register.html, index.html and each programme page back to forms |
 | 27 Sep 2027 | Domain renewal at GoDaddy |
 
 There is also one known inconsistency left alone on purpose: the Grand contest stat strip

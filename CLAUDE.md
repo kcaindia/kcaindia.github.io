@@ -159,7 +159,9 @@ server config.
 
 ### KCA National Art Excellence Awards Ceremony 2027, Kala Ratna Samman (added 10 Nov 2026)
 - Page: `/national-art-excellence-awards.html`, short link `/awards`
-- Source: mumma's 4 page brochure, `brochure/KCA-National-Art-Excellence-Awards-2027-Brochure.pdf`, page JPGs at `images/awards-brochure/page-01.jpg` to `page-04.jpg`
+- Brochure: **5 pages since 16 Nov 2026** (mumma sent a new Word file). PDF `brochure/KCA-National-Art-Excellence-Awards-2027-Brochure.pdf`, page JPGs `images/awards-brochure/page-01.jpg` to `page-05.jpg` plus `thumbs/`, all linked with `?v=2`. Her Word source is kept at `brochure/source/KCA-National-Art-Excellence-Awards-2027-Brochure.docx`.
+- **Word to PDF on this Mac:** there is no Word or LibreOffice, and `textutil` drops cell shading. Use `python3 tools/docx2html.py <unzipped docx folder> out.html`, then Chrome headless `--print-to-pdf`. It keeps colours, tables, bullets, images and the page footer. Shrink the docx images first (sips -Z) to keep the PDF under 1 MB. Decode the QR codes to check them (CIDetector via swift).
+- Dates (new brochure): nominate and pay by 30 Dec 2026, upload artwork by 15 Jan 2027, awardees announced 14 Feb 2027, ceremony 14 Mar 2027. Exhibition is free entry for all visitors (school pass and Rs 50 visitor fee were dropped). Extra email kcanationalartawards@gmail.com.
 - Ceremony 14 March 2027, Sunday, 11 AM to 2.30 PM, 5 star hotel in Nagpur (to be informed). Exhibition 11 AM to 8 PM.
 - 9 categories (Class 1 and 2 up to Professional Artists), 25 awardees each, 225 total, one time fee Rs 2500 non refundable.
 - WhatsApp community: https://chat.whatsapp.com/BQgHsGOWsWu6Rku9VicChp (printed in the brochure)
@@ -324,6 +326,10 @@ for t in ('div','section','a','ul','li','span','p','h1','h2'):
 |---|---|
 | Done 10 Nov 2026 | Grand contest and Art Club registration closed until June 2027, Register chooser page added |
 | 15 Nov 2026 | Artwork upload closes for the Grand contest |
+| 30 Dec 2026 | Awards 2027: last date to nominate and pay |
+| 15 Jan 2027 | Awards 2027: last date to upload artwork. After this, close the awards registration buttons |
+| 14 Feb 2027 | Awards 2027: awardees announced |
+| 14 Mar 2027 | Awards 2027 ceremony, Nagpur |
 | 15 Dec 2026 | Shortlist announced, all 10 categories |
 | 30 Dec 2026 | Original artworks due from shortlisted participants |
 | 15 Jan 2027 | Final results |

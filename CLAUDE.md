@@ -159,14 +159,14 @@ server config.
 
 ### KCA National Art Excellence Awards Ceremony 2027, Kala Ratna Samman (added 10 Nov 2026)
 - Page: `/national-art-excellence-awards.html`, short link `/awards`
-- Brochure: **5 pages since 16 Nov 2026** (mumma sent a new Word file). PDF `brochure/KCA-National-Art-Excellence-Awards-2027-Brochure.pdf`, page JPGs `images/awards-brochure/page-01.jpg` to `page-05.jpg` plus `thumbs/`, all linked with `?v=2`. Her Word source is kept at `brochure/source/KCA-National-Art-Excellence-Awards-2027-Brochure.docx`.
-- **Word to PDF on this Mac:** there is no Word or LibreOffice, and `textutil` drops cell shading. Use `python3 tools/docx2html.py <unzipped docx folder> out.html`, then Chrome headless `--print-to-pdf`. It keeps colours, tables, bullets, images and the page footer. Shrink the docx images first (sips -Z) to keep the PDF under 1 MB. Decode the QR codes to check them (CIDetector via swift).
+- Brochure: **5 pages, latest Word file from mumma 24 Nov 2026** (earlier 16 Nov). PDF `brochure/KCA-National-Art-Excellence-Awards-2027-Brochure.pdf`, page JPGs `images/awards-brochure/page-01.jpg` to `page-05.jpg` plus `thumbs/`, all linked with `?v=3` (bump on every replacement). Her Word source is kept at `brochure/source/KCA-National-Art-Excellence-Awards-2027-Brochure.docx`.
+- **Word to PDF on this Mac:** there is no Word or LibreOffice, and `textutil` drops cell shading. Use `python3 tools/docx2html.py <unzipped docx folder> out.html`, then Chrome headless `--print-to-pdf`. It keeps colours, tables, bullets, images and the page footer. Shrink the docx images first (sips -Z) to keep the PDF under 1 MB. Render pages and read text with `swift tools/pdfpages.swift in.pdf outdir 900`, decode QR codes with `swift tools/qrdecode.swift img.png` (both saved in the repo because session scratchpads get wiped). Diff her new Word text against `brochure/source/...docx` with `textutil -convert txt` on both.
 - Dates (new brochure): nominate and pay by 30 Dec 2026, upload artwork by 15 Jan 2027, awardees announced 14 Feb 2027, ceremony 14 Mar 2027. Exhibition is free entry for all visitors (school pass and Rs 50 visitor fee were dropped). Extra email kcanationalartawards@gmail.com.
 - Ceremony 14 March 2027, Sunday, 11 AM to 2.30 PM, 5 star hotel in Nagpur (to be informed). Exhibition 11 AM to 8 PM.
 - 9 categories (Class 1 and 2 up to Professional Artists), 25 awardees each, 225 total, one time fee Rs 2500 non refundable.
 - WhatsApp community: https://chat.whatsapp.com/BQgHsGOWsWu6Rku9VicChp (printed in the brochure)
 - **Registration OPEN since 10 Nov 2026.** Form: `https://forms.gle/fS6RMirhw3286yD46` (needs Google sign in because it has file uploads). Linked from the awards page hero, step 1 and closing, the register.html card; homepage card chip says Registration open.
-- Homepage headline changed from "Three Ways to Join" to "Four Ways to Join" when this was added.
+- 24 Nov 2026 brochure added: fee is now called the **nomination fee**; a note that students may join individually or through their school or art institute; reworded participant declaration; and a **Special Recognition Awards** section (`#special-recognition`) for principals, schools and art institutes: 2 principal awards, 6 school and institute awards, minimum 50 participating students, NO fee for them, schools nominate students via kcanationalartawards@gmail.com or WhatsApp 7770016545 and share the nomination form.
 
 ### Shared contacts and socials
 ```
